@@ -1,0 +1,2 @@
+script_key = getgenv().Misery.StartUP.Key;
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7176feefde8380720757262818ebc61e.lua"))()
