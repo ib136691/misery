@@ -148,5 +148,6 @@ getgenv().Misery = {
                 };
 
             };
+};  };  };
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ib136691/misery/main/misery", true))()
