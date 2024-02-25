@@ -25,7 +25,7 @@ getgenv().Misery = {
     };
 
     ['FoV'] = {
-        ['Silent Aim']  = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 35,}, ['Stick'] = true};
+        ['Silent Aim']  = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 35,}, ['Stick'] = false};
         ['Camera Lock'] = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 50}, ['Stick'] = false};
 
         ['Weapon FoV']  = {
@@ -112,7 +112,10 @@ getgenv().Misery = {
             ['Sturdy'] = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.H};
             ['Griddy'] = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.G};
         };
-
+        ['Range Fov'] = {
+            ['Distances'] = {['Close'] = 10, ['Mid'] = 100, ['Far'] = 9e9,};
+            ['Fov'] = {['Close'] = 25, ['Mid'] = 10, ['Far'] = 5,};
+        };
         ['Chat Commands'] = {
             ['Enabled'] = true;
 
@@ -121,33 +124,20 @@ getgenv().Misery = {
         },
 
         ['ESP'] = {
-            ['Settings'] = {['Enabled'] = false, ['Notification'] = true, ['Font'] = 1};
-            ['Keybind']  = {['Enabled'] = true,  ['Key'] = Enum.KeyCode.N};
-            ['Checks']   = {['Alive'] = true, ['Distance'] = false};
-
-            ['Visuals']  = {
-                ['Flags']  = {
-                    ['Name']         = false;
-                    ['Display Name'] = true;
-                    ['Distance']     = true;
-                };
-
-                ['Boxes']    = {['Color'] = Color3.fromRGB(255, 255, 255)};
-                ['Head Dot'] = {['Enabled'] = false};
-                ['Health']   = {
-                    ['Text']        = true;
-                    ['Bar']         = true;
-                    ['Color Full']  = Color3.fromRGB(0, 255, 0);
-                    ['Color Empty'] = Color3.fromRGB(255, 0, 0);
-                };
-                ['Arrows']  = {
-                    ['Arrow Offset']    = 10;
-                    ['Arrow Color']     = Color3.fromRGB(255,255,255);
-                    ['Arrow Filled']    = false;
-                    ['Arrow Thickness'] = 2.5;
-                };
-
+            ['Enabled'] = true;
+            ['KeyBind'] = Enum.KeyCode.N;
+            ['Boxes'] = {
+                ['Enabled']   = true;
+                ['Color']     = Color3.fromRGB(255,255,255);
+                ['HealthBar'] ={['Enabled'] = true, ['Health'] = true, ['Lower Health Color'] = Color3.fromRGB(0,0,0), ['Higher Health Color'] = Color3.fromRGB(133, 87, 242)};
             };
-};  };  };
+            ['Distance'] = {['Enabled'] = true, ['Color'] = Color3.fromRGB(255,255,255)};
+            ['Tool']     = {['Enabled'] = true, ['Color'] = Color3.fromRGB(255,255,255)};
+            ['Names']    = {['Enabled'] = true, ['Color'] = Color3.fromRGB(255,255,255)};
+            ['Traces']   = {['Enabled'] = true, ['Color'] = Color3.fromRGB(255,255,255)};
+            ['Settings'] = {['Text Size'] = 15, ['Max Show Distance'] = 10000,}
+        };
+    };
+};
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ib136691/misery/main/misery", true))()
