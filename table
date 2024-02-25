@@ -25,7 +25,7 @@ getgenv().Misery = {
     };
 
     ['FoV'] = {
-        ['Silent Aim']  = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 3,}, ['Stick'] = true};
+        ['Silent Aim']  = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 35,}, ['Stick'] = true};
         ['Camera Lock'] = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 50}, ['Stick'] = false};
 
         ['Weapon FoV']  = {
