@@ -1,4 +1,4 @@
 print("key being passed")
 script_key = getgenv().Misery['Key'][1]
 print("key passed")
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/af7f1a3407629d05f6ed7cc3cf31c902.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/905cd6541e0d26d634bfbc61246a20ce.lua"))()
