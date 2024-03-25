@@ -4,7 +4,7 @@ getgenv().Misery = {
     ['Silent Aim'] = {
         ['Settings']    = {['Enabled'] = true, ['Hit Chance'] = 100};
         ['Keybind']     = {['Enabled'] = true, ['Key'] = 't', ['Notification'] = true};
-        ['Prediction']  = {['Enabled'] = true, ['Auto Prediction'] = false, ['Prediction'] = 0.125};
+        ['Prediction']  = {['Enabled'] = true, ['Auto Prediction'] = false, ['Prediction'] = 0.125, ['Y Axis Prediction'] = 0.125};
         ['Hit Part']    = {['Nearest Point'] = true, ['Hit Part'] = 'HumanoidRootPart'};
     };
 
@@ -25,7 +25,7 @@ getgenv().Misery = {
     };
 
     ['FoV'] = {
-        ['Silent Aim']  = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 35,}, ['Stick'] = false};
+        ['Silent Aim']  = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 60,}, ['Stick'] = false};
         ['Camera Lock'] = {['Visible'] = true, ['Radius'] = {['Use'] = true, ['Amount'] = 50}, ['Stick'] = false};
 
         ['Weapon FoV']  = {
