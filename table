@@ -6,7 +6,6 @@ getgenv().Misery = {
         ['Keybind']     = {['Enabled'] = true, ['Key'] = 't', ['Notification'] = true};
         ['Prediction']  = {['Enabled'] = true, ['Auto Prediction'] = false, ['Prediction'] = 0.125, ['Y Axis Prediction'] = 0.125};
         ['Hit Part']    = {['Nearest Point'] = true, ['Hit Part'] = 'HumanoidRootPart'};
-        ['Hit Chance']  = {['Default'] = 100, ['Air Shot'] = 96};
     };
 
     ['Camera Lock'] = {
@@ -113,23 +112,16 @@ getgenv().Misery = {
             ['Sturdy'] = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.H};
             ['Griddy'] = {['Enabled'] = false, ['Keybind'] = Enum.KeyCode.G};
         };
-
         ['Range Fov'] = {
             ['Distances'] = {['Close'] = 10, ['Mid'] = 100, ['Far'] = 9e9,};
             ['Fov'] = {['Close'] = 25, ['Mid'] = 10, ['Far'] = 5,};
         };
-
         ['Chat Commands'] = {
             ['Enabled'] = true;
 
             ['Silent Aim']  = {['FoV'] = '!fov', ['Prediction'] = '!pred'};
             ['Camera Lock'] = {['FoV'] = '/fov', ['Prediction'] = '/pred', ['Smoothness'] = '/smoothness'};
-        };
-
-        ['Auto Settings'] = {
-            ['Low GFX'] = true,
-            ['FPS Cap'] = {['Enabled'] = true, ['Cap'] = 999},
-        };
+        },
 
         ['ESP'] = {
             ['Enabled'] = true;
